@@ -7,13 +7,13 @@
 }
 
 html {
-  scroll-padding-top: 82px;
+  scroll-padding-top: 94.67px;
 }
 
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
-  background-color: #444;
+  background-color: #333;
 }
 
 h2 {
@@ -28,154 +28,225 @@ h2 {
   background-color: #039dff;
 }
 
-.blue-text {
-  color: #039dff;
-}
-
-.shadow-bg {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 nav {
+  width: 100%;
   text-transform: uppercase;
-  transition: background-color 0.6s;
   z-index: 1;
+  transition: background-color 0.5s;
 }
-nav a,
-nav i {
-  color: #fff;
+nav .nav-link {
+  color: #fff !important;
 }
-nav a:hover {
-  color: #039dff;
+nav .nav-link:hover {
+  color: #039dff !important;
 }
 nav .fa-bars {
+  color: #fff;
   padding: 10px;
 }
 nav .navbar-brand {
+  color: #fff;
   font-weight: bold;
+}
+nav .navbar-brand:hover {
+  color: #039dff;
 }
 nav .active {
   color: #039dff;
 }
+nav span {
+  color: #039dff;
+}
 
-header {
-  color: #fff;
-}
-header h1 {
-  font-size: 30px;
-  text-transform: uppercase;
-}
-header p {
-  font-size: 14px;
-}
-header .hero-img {
+.hero-img {
   position: relative;
   height: 100vh;
-  background-image: url("../img/header-mini.jpg");
+  background: url("/img/PlayStation_Small.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   z-index: 0;
 }
-header .hero-shadow {
+
+.hero-shadow {
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: -10;
 }
-header .hero-text {
+
+.hero-title {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100%;
-  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
+  text-transform: uppercase;
+  color: #fff;
   z-index: 5;
 }
-header .btn-outline-light {
+.hero-title h1 {
+  display: inline-block;
+  font-size: 1.8rem;
+  padding: 1em;
+}
+.hero-title p {
+  font-size: 0.8rem;
+}
+
+.btn-outline-light {
   text-transform: uppercase;
 }
-header .fa-chevron-down {
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fa-chevron-down {
   position: absolute;
+  font-size: 3rem;
+  bottom: 1em;
+  color: #fff;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 20px;
-  font-size: 30px;
-  color: #fff;
+}
+
+.blue-text {
+  display: inline;
+  color: #039dff;
 }
 
 .aboutus i {
-  margin-top: 20px;
-  font-size: 30px;
+  margin-top: 1.25em;
+  font-size: 1.8rem;
 }
-.aboutus .aboutus-card-title {
-  font-size: 18px;
+
+.about-us-card-title {
+  font-size: 1.2rem;
   text-transform: uppercase;
 }
-.aboutus .aboutus-card-text {
-  font-size: 14px;
+
+.about-us-card-text {
+  font-size: 0.9rem;
 }
-.aboutus .aboutus-hover {
+
+.aboutus-hover {
   transition: color 0.3s;
 }
-.aboutus .aboutus-hover:hover {
+
+.aboutus-hover:hover {
   color: #039dff;
 }
 
 .aboutus-hero {
   position: relative;
-  background-image: url("../img/about-hero-small.jpg");
+  background-image: url("/img/technology_small.jpg");
   background-position: center;
   background-size: cover;
-  color: #ddd;
+  background-attachment: fixed;
   z-index: 0;
 }
-.aboutus-hero .aboutus-shadow {
-  position: absolute;
-  top: 0;
+.aboutus-hero .aboutus-hero-card-title, .aboutus-hero .aboutus-hero-card-text, .aboutus-hero i, .aboutus-hero h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.aboutus-hero .aboutus-hero-card-title {
+  margin-top: 3.8em;
+}
+.aboutus-hero i {
+  font-size: 1.9rem;
+  padding-top: 1em;
+}
+.aboutus-hero .fa {
+  height: 0%;
+}
+.aboutus-hero h2 {
+  padding-top: 1em;
+}
+
+.portfolio .carousel-item {
+  position: relative;
+  height: 600px;
+}
+.portfolio .carousel-item .image {
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: -5;
 }
-.aboutus-hero .aboutus-hero-item {
-  margin: 10px 0;
+.portfolio .carousel-item .carousel-caption {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  left: 50%;
+  padding: 3em 0;
+  bottom: 10px;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
 }
-.aboutus-hero .aboutus-hero-item i {
-  font-size: 36px;
-}
-.aboutus-hero .aboutus-hero-item .aboutus-hero-title {
-  font-size: 24px;
+.portfolio .carousel-indicators {
+  padding-bottom: 1.2em;
 }
 
 @media (min-width: 375px) {
-  header h1 {
-    font-size: 36px;
+  .hero-title h1 {
+    font-size: 2.25rem;
   }
-  header p {
-    font-size: 16px;
+  .hero-title p {
+    font-size: 1rem;
   }
 }
 @media (min-width: 768px) {
-  header h1 {
-    font-size: 42px;
+  .aboutus-hero {
+    align-items: center;
+    text-align: center;
   }
-  header p {
-    font-size: 20px;
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  .fa-bars {
+    font-size: 2rem;
+  }
+  .hero-title h1 {
+    font-size: 3.5rem;
+  }
+  .hero-title p {
+    font-size: 1rem;
+    margin-bottom: 1.3em;
+  }
+  .btn-outline-light {
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 992px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  .fa-bars {
+    font-size: 2rem;
+  }
+  .hero-title h1 {
+    font-size: 3.5rem;
+  }
+  .hero-title p {
+    font-size: 1rem;
+    margin-bottom: 1.3em;
+  }
+  .btn-outline-light {
+    font-size: 1.5rem;
+  }
   html {
     scroll-padding-top: 72px;
   }
-  .aboutus-hero {
-    background-image: url("../img/about-hero-big.jpg");
-  }
 }
+.aboutus-hero-hero {
+  background-image: url("/img/technology_big.jpg");
+}
+
 @media (min-width: 1200px) {
-  header .hero-img {
-    background-image: url("../img/header-big.jpg");
+  .hero-img {
+    background-image: url("/img/Playstation_Big.jpg");
   }
 }/*# sourceMappingURL=main.css.map */
