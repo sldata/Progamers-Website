@@ -14,6 +14,7 @@ body {
   position: relative;
   font-family: "Montserrat", sans-serif;
   background-color: #333;
+  background-color: #ebecf2;
 }
 
 h2 {
@@ -193,6 +194,34 @@ nav span {
 .card {
   text-align: center;
   margin: 15px;
+}
+
+.prices .price-title {
+  text-align: center;
+}
+.prices .prices-cards {
+  padding: 2em;
+}
+.prices .price-card {
+  margin: 3em 0;
+  text-align: center;
+}
+.prices li {
+  padding: 10px;
+  list-style: none;
+}
+.prices .order-btn {
+  margin-top: 2em;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: grey;
+  text-align: center;
+  cursor: pointer;
+}
+.prices .active {
+  background-color: #039dff;
 }
 
 @media (min-width: 375px) {

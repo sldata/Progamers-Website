@@ -14,7 +14,7 @@ body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
 	background-color: #333;
-	
+	background-color: colors.$bg-color;
 }
 
 h2 {
@@ -26,7 +26,7 @@ h2 {
 	margin: 0 auto 40px;
 	width: 60px;
 	height: 4px;
-	
+
 	background-color: colors.$maincolor;
 }
 
@@ -39,7 +39,7 @@ nav {
 	.nav-link {
 		color: colors.$white-color;
 	}
-	
+
 	.nav-link:hover {
 		color: colors.$maincolor;
 	}
@@ -207,6 +207,40 @@ nav {
 .card {
 	text-align: center;
 	margin: 15px;
+}
+
+.prices {
+	.price-title {
+		
+		text-align: center;
+	}
+	.prices-cards {
+		padding: 2em;
+	}
+	.price-card {
+		margin: 3em 0;
+	text-align: center;
+	}
+
+	li {
+		padding: 10px;
+		list-style: none;
+		
+	}
+
+	.order-btn {
+		margin-top: 2em;
+		padding: 10px;
+		border: none;
+		border-radius: 5px;
+		color: colors.$white-color;
+		background-color: grey;
+		text-align: center;
+		cursor: pointer;
+	}
+	.active {
+		background-color: colors.$maincolor;
+	}
 }
 
 @media (min-width: 375px) {
