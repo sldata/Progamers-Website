@@ -7,7 +7,7 @@
 }
 
 html {
-  scroll-padding-top: 94.67px;
+  scroll-padding-top: 82px;
 }
 
 body {
@@ -35,10 +35,10 @@ nav {
   transition: background-color 0.5s;
 }
 nav .nav-link {
-  color: #fff !important;
+  color: #fff;
 }
 nav .nav-link:hover {
-  color: #039dff !important;
+  color: #039dff;
 }
 nav .fa-bars {
   color: #fff;
@@ -49,9 +49,6 @@ nav .navbar-brand {
   font-weight: bold;
 }
 nav .navbar-brand:hover {
-  color: #039dff;
-}
-nav .active {
   color: #039dff;
 }
 nav span {
@@ -151,7 +148,10 @@ nav span {
   background-attachment: fixed;
   z-index: 0;
 }
-.aboutus-hero .aboutus-hero-card-title, .aboutus-hero .aboutus-hero-card-text, .aboutus-hero i, .aboutus-hero h2 {
+.aboutus-hero .aboutus-hero-card-title,
+.aboutus-hero .aboutus-hero-card-text,
+.aboutus-hero i,
+.aboutus-hero h2 {
   color: #fff;
   margin-bottom: 10px;
 }
@@ -242,8 +242,8 @@ nav span {
   .btn-outline-light {
     font-size: 1.5rem;
   }
-  html {
-    scroll-padding-top: 72px;
+  nav {
+    height: 82px;
   }
 }
 .aboutus-hero-hero {

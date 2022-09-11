@@ -7,13 +7,14 @@
 	padding: 0;
 }
 html {
-	scroll-padding-top: 94.67px;
+	scroll-padding-top: 82px;
 }
 
 body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
 	background-color: #333;
+	
 }
 
 h2 {
@@ -25,6 +26,7 @@ h2 {
 	margin: 0 auto 40px;
 	width: 60px;
 	height: 4px;
+	
 	background-color: colors.$maincolor;
 }
 
@@ -35,11 +37,11 @@ nav {
 	transition: background-color 0.5s;
 
 	.nav-link {
-		color: colors.$white-color !important;
+		color: colors.$white-color;
 	}
-
+	
 	.nav-link:hover {
-		color: colors.$maincolor !important;
+		color: colors.$maincolor;
 	}
 
 	.fa-bars {
@@ -55,15 +57,11 @@ nav {
 	.navbar-brand:hover {
 		color: colors.$maincolor;
 	}
-	.active {
-		color: colors.$maincolor;
-	}
+
 	span {
 		color: colors.$maincolor;
 	}
 }
-
-
 
 .hero-img {
 	position: relative;
@@ -111,7 +109,6 @@ nav {
 }
 
 .shadow-bg {
-	
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -151,56 +148,47 @@ nav {
 	color: colors.$maincolor;
 }
 
-.aboutus-hero{
+.aboutus-hero {
 	position: relative;
 	background-image: url('/img/technology_small.jpg');
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
 	z-index: 0;
-	
-	
-	
-	
-	.aboutus-hero-card-title, .aboutus-hero-card-text, i, h2{
+
+	.aboutus-hero-card-title,
+	.aboutus-hero-card-text,
+	i,
+	h2 {
 		color: colors.$white-color;
 		margin-bottom: 10px;
-		
 	}
-	.aboutus-hero-card-title{
+	.aboutus-hero-card-title {
 		margin-top: 3.8em;
 	}
-	i{
-	
+	i {
 		font-size: 1.9rem;
 		padding-top: 1em;
 	}
 
-	.fa{
+	.fa {
 		height: 0%;
 	}
-	
-	
-	h2{
-		
-		padding-top: 1em ;
+
+	h2 {
+		padding-top: 1em;
 	}
-	
-	
 }
 
-.portfolio{
-	
-	.carousel-item{
+.portfolio {
+	.carousel-item {
 		position: relative;
-		height: 600px;	
-		
-		.image{
-			
+		height: 600px;
+
+		.image {
 			width: 100%;
-					
 		}
-		.carousel-caption{
+		.carousel-caption {
 			position: absolute;
 			width: 100%;
 			display: flex;
@@ -209,21 +197,17 @@ nav {
 			bottom: 10px;
 			transform: translateX(-50%);
 			background-color: rgba(0, 0, 0, 0.8);
-			
 		}
 	}
-	.carousel-indicators{
-	padding-bottom: 1.1em;
+	.carousel-indicators {
+		padding-bottom: 1.1em;
 	}
 }
 
-.card{
+.card {
 	text-align: center;
 	margin: 15px;
 }
-
-
-
 
 @media (min-width: 375px) {
 	.hero-title {
@@ -236,19 +220,10 @@ nav {
 	}
 }
 
-
-
-
-
 @media (min-width: 768px) {
-	
-	
-	.aboutus-hero{
-		
+	.aboutus-hero {
 		align-items: center;
 		text-align: center;
-
-		
 	}
 	.navbar-brand {
 		font-size: 1rem;
@@ -272,15 +247,15 @@ nav {
 	}
 }
 
-@media(min-width: 992px){
+@media (min-width: 992px) {
 	.navbar-brand {
 		font-size: 1rem;
 	}
-	
+
 	.fa-bars {
 		font-size: 2rem;
 	}
-	
+
 	.hero-title {
 		h1 {
 			font-size: 3.5rem;
@@ -293,18 +268,16 @@ nav {
 	.btn-outline-light {
 		font-size: 1.5rem;
 	}
-	html {
-		scroll-padding-top: 72px;
+	nav {
+		height: 82px;
 	}
-	}
+}
 
-	.aboutus-hero-hero{
-		background-image:url('/img/technology_big.jpg');
-	}
+.aboutus-hero-hero {
+	background-image: url('/img/technology_big.jpg');
+}
 
 @media (min-width: 1200px) {
-
-
 	.hero-img {
 		background-image: url('/img/Playstation_Big.jpg');
 	}
