@@ -196,15 +196,36 @@ nav span {
   margin: 15px;
 }
 
-.prices .price-title {
-  text-align: center;
-}
 .prices .prices-cards {
-  padding: 2em;
+  padding-left: 3em;
+}
+.prices .price-title {
+  padding-top: 1em;
+  text-transform: uppercase;
+  color: #039dff;
+}
+.prices span {
+  font-weight: bold;
+}
+.prices i {
+  font-size: 1.4rem;
+  margin: 0.3em;
+}
+.prices .final-price {
+  margin-top: 0.5em;
+  font-weight: bold;
+  font-size: 2rem;
 }
 .prices .price-card {
-  margin: 3em 0;
+  margin-right: 3em;
+  margin-bottom: 3em;
+  background-color: #fff;
   text-align: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+.prices .price-card:hover {
+  transform: scale(1.1);
 }
 .prices li {
   padding: 10px;
@@ -212,6 +233,7 @@ nav span {
 }
 .prices .order-btn {
   margin-top: 2em;
+  margin-bottom: 2em;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -222,6 +244,9 @@ nav span {
 }
 .prices .active {
   background-color: #039dff;
+}
+.prices .price-info a {
+  text-decoration: none;
 }
 
 @media (min-width: 375px) {
@@ -274,11 +299,13 @@ nav span {
   nav {
     height: 82px;
   }
+  .aboutus-hero-hero {
+    background-image: url("/img/technology_big.jpg");
+  }
+  .prices p {
+    font-size: 1.2rem;
+  }
 }
-.aboutus-hero-hero {
-  background-image: url("/img/technology_big.jpg");
-}
-
 @media (min-width: 1200px) {
   .hero-img {
     background-image: url("/img/Playstation_Big.jpg");

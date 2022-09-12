@@ -210,26 +210,50 @@ nav {
 }
 
 .prices {
-	.price-title {
-		
-		text-align: center;
-	}
 	.prices-cards {
-		padding: 2em;
+		padding-left: 3em;
 	}
+	.price-title {
+		padding-top: 1em;
+		text-transform: uppercase;
+		color: colors.$maincolor;
+	}
+	
+	span {
+		font-weight: bold;
+	}
+	i{
+		font-size: 1.4rem;
+		margin: .3em;
+	}
+	.final-price {
+		margin-top: 0.5em;
+		font-weight: bold;
+		font-size: 2rem;
+	}
+	
 	.price-card {
-		margin: 3em 0;
-	text-align: center;
+		margin-right: 3em;
+		margin-bottom: 3em;
+		background-color: colors.$white-color;
+		text-align: center;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+		transition: transform 0.3s;
+	}
+
+	
+	.price-card:hover {
+		transform: scale(1.1);
 	}
 
 	li {
 		padding: 10px;
 		list-style: none;
-		
 	}
 
 	.order-btn {
 		margin-top: 2em;
+		margin-bottom: 2em;
 		padding: 10px;
 		border: none;
 		border-radius: 5px;
@@ -241,6 +265,14 @@ nav {
 	.active {
 		background-color: colors.$maincolor;
 	}
+
+	.price-info {
+		a{
+		text-decoration: none;
+	
+	}
+	}
+
 }
 
 @media (min-width: 375px) {
@@ -305,11 +337,18 @@ nav {
 	nav {
 		height: 82px;
 	}
+	.aboutus-hero-hero {
+		background-image: url('/img/technology_big.jpg');
+	}
+
+	.prices{
+		p{
+			font-size: 1.2rem;
+		}
+	}
 }
 
-.aboutus-hero-hero {
-	background-image: url('/img/technology_big.jpg');
-}
+
 
 @media (min-width: 1200px) {
 	.hero-img {
