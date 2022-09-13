@@ -289,14 +289,13 @@ nav {
 		z-index: -1;
 	}
 
-	
 	h2 {
 		color: colors.$white-color;
 	}
 	.card {
 		transition: transform 0.3s;
-		i{
-			padding: .6em;
+		i {
+			padding: 0.6em;
 		}
 	}
 	.card:hover {
@@ -304,16 +303,25 @@ nav {
 	}
 
 	.card-img-top {
-		display: flex;
 		
 		height: 300px;
 		object-fit: cover;
-		
+	}
+	.card-body {
+		height: 10em;
 	}
 
 	.card-title {
 		text-transform: uppercase;
 	}
+}
+@media (min-width: 320px) {
+	.team{
+	.card-img-top {
+		height: 200px;
+	}
+	
+}
 }
 
 @media (min-width: 375px) {

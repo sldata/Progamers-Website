@@ -278,15 +278,22 @@ nav span {
   transform: scale(0.9);
 }
 .team .card-img-top {
-  display: flex;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.team .card-body {
+  height: 10em;
 }
 .team .card-title {
   text-transform: uppercase;
 }
 
+@media (min-width: 320px) {
+  .team .card-img-top {
+    height: 200px;
+  }
+}
 @media (min-width: 375px) {
   .hero-title h1 {
     font-size: 2.25rem;
