@@ -218,20 +218,20 @@ nav {
 		text-transform: uppercase;
 		color: colors.$maincolor;
 	}
-	
+
 	span {
 		font-weight: bold;
 	}
-	i{
+	i {
 		font-size: 1.4rem;
-		margin: .3em;
+		margin: 0.3em;
 	}
 	.final-price {
 		margin-top: 0.5em;
 		font-weight: bold;
 		font-size: 2rem;
 	}
-	
+
 	.price-card {
 		margin-right: 3em;
 		margin-bottom: 3em;
@@ -241,7 +241,6 @@ nav {
 		transition: transform 0.3s;
 	}
 
-	
 	.price-card:hover {
 		transform: scale(1.1);
 	}
@@ -267,21 +266,53 @@ nav {
 	}
 
 	.price-info {
-		a{
-		text-decoration: none;
-	
+		a {
+			text-decoration: none;
+		}
 	}
-	}
-
 }
 
+.team {
+	position: relative;
+	background-image: url('/img/conference_room_small.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
 
-.team{
-	.text-muted{
+	.team-shadow {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: -1;
+	}
+
+	
+	h2 {
+		color: colors.$white-color;
+	}
+	.card {
+		transition: transform 0.3s;
 		i{
-			margin:0 1em;
-			color: colors.$maincolor;
+			padding: .6em;
 		}
+	}
+	.card:hover {
+		transform: scale(0.9);
+	}
+
+	.card-img-top {
+		display: flex;
+		
+		height: 300px;
+		object-fit: cover;
+		
+	}
+
+	.card-title {
+		text-transform: uppercase;
 	}
 }
 
@@ -351,14 +382,15 @@ nav {
 		background-image: url('/img/technology_big.jpg');
 	}
 
-	.prices{
-		p{
+	.prices {
+		p {
 			font-size: 1.2rem;
 		}
 	}
+	.team {
+		background-image: url('/img/conference_room_big.jpg');
+	}
 }
-
-
 
 @media (min-width: 1200px) {
 	.hero-img {
