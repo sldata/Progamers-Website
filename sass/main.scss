@@ -275,6 +275,16 @@ nav {
 
 }
 
+
+.team{
+	.text-muted{
+		i{
+			margin:0 1em;
+			color: colors.$maincolor;
+		}
+	}
+}
+
 @media (min-width: 375px) {
 	.hero-title {
 		h1 {

@@ -249,6 +249,11 @@ nav span {
   text-decoration: none;
 }
 
+.team .text-muted i {
+  margin: 0 1em;
+  color: #039dff;
+}
+
 @media (min-width: 375px) {
   .hero-title h1 {
     font-size: 2.25rem;
