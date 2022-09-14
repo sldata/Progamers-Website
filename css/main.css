@@ -306,6 +306,31 @@ nav span {
   text-transform: uppercase;
 }
 
+.contact {
+  position: relative;
+  background-image: url("/img/town_small.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 0;
+}
+.contact .underline {
+  background-color: #fff;
+}
+.contact i {
+  color: #fff;
+}
+
+.contact-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(2, 11, 30, 0.8);
+  z-index: -1;
+}
+
 @media (min-width: 320px) {
   .team .card-img-top {
     height: 200px;
