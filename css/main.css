@@ -289,6 +289,23 @@ nav span {
   text-transform: uppercase;
 }
 
+.achievments-box i {
+  padding: 1em;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0 0 5px #333;
+}
+.achievments-box .achievment {
+  padding: 2em 0;
+}
+.achievments-box .achievment-number {
+  font-size: 2rem;
+}
+.achievments-box .achievment-text {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
 @media (min-width: 320px) {
   .team .card-img-top {
     height: 200px;
@@ -311,7 +328,7 @@ nav span {
     font-size: 1rem;
   }
   .fa-bars {
-    font-size: 2rem;
+    font-size: 1.1rem;
   }
   .hero-title h1 {
     font-size: 3.5rem;
