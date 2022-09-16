@@ -1,4 +1,5 @@
 @use 'colors';
+
 *,
 *::before,
 *::after {
@@ -119,6 +120,7 @@ nav {
 	color: colors.$white-color;
 	left: 50%;
 	transform: translateX(-50%);
+	
 }
 
 .blue-text {
