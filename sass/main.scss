@@ -1,5 +1,5 @@
 @use 'colors';
-
+@use 'animation';
 *,
 *::before,
 *::after {
@@ -118,7 +118,7 @@ nav {
 	font-size: 3rem;
 	bottom: 1em;
 	color: colors.$white-color;
-	left: 50%;
+	left: 49.5%;
 	transform: translateX(-50%);
 	
 }
@@ -390,6 +390,7 @@ nav {
 			height: 200px;
 		}
 	}
+	
 }
 
 @media (min-width: 375px) {
@@ -428,6 +429,7 @@ nav {
 	.btn-outline-light {
 		font-size: 1.5rem;
 	}
+
 }
 
 @media (min-width: 992px) {
@@ -467,9 +469,10 @@ nav {
 		background-image: url('/img/conference_room_big.jpg');
 	}
 }
+
 .contact {
 	background-image: url('/img/town_big.jpg');
-
+	
 	@media (min-width: 1200px) {
 		.hero-img {
 			background-image: url('/img/Playstation_Big.jpg');
