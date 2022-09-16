@@ -309,17 +309,35 @@ nav span {
 .contact {
   position: relative;
   background-image: url("/img/town_small.jpg");
+  background-position: bottom;
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
-  text-transform: uppercase;
   z-index: 0;
 }
 .contact .underline {
   background-color: #fff;
 }
-.contact i {
+.contact .contact-item {
+  margin-bottom: 2em;
+}
+.contact .contact-item h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.contact .contact-item .social-media {
+  font-size: 2.2rem;
+}
+.contact .contact-item .social-media a {
+  padding: 1em;
   color: #fff;
+}
+.contact .contact-item .social-media a:hover {
+  color: #ebecf2;
+}
+.contact .contact-us {
+  display: flex;
+  align-items: center;
 }
 
 .contact-shadow {
@@ -396,8 +414,11 @@ nav span {
     background-image: url("/img/conference_room_big.jpg");
   }
 }
+.contact {
+  background-image: url("/img/town_big.jpg");
+}
 @media (min-width: 1200px) {
-  .hero-img {
+  .contact .hero-img {
     background-image: url("/img/Playstation_Big.jpg");
   }
 }/*# sourceMappingURL=main.css.map */
