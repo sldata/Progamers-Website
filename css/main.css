@@ -434,6 +434,10 @@ nav span {
   .team .card-img-top {
     height: 200px;
   }
+  .fa-chevron-down {
+    left: 44.5%;
+    transform: translateX(-50%);
+  }
 }
 @media (min-width: 375px) {
   .hero-title h1 {
@@ -463,6 +467,10 @@ nav span {
   }
   .btn-outline-light {
     font-size: 1.5rem;
+  }
+  .fa-chevron-down {
+    left: 47.5%;
+    transform: translateX(-50%);
   }
 }
 @media (min-width: 992px) {
@@ -498,8 +506,13 @@ nav span {
 .contact {
   background-image: url("/img/town_big.jpg");
 }
+
 @media (min-width: 1200px) {
-  .contact .hero-img {
+  .hero-img {
     background-image: url("/img/Playstation_Big.jpg");
+  }
+  .fa-chevron-down {
+    left: 47%;
+    transform: translateX(-50%);
   }
 }/*# sourceMappingURL=main.css.map */

@@ -120,7 +120,6 @@ nav {
 	color: colors.$white-color;
 	left: 49.5%;
 	transform: translateX(-50%);
-	
 }
 
 .blue-text {
@@ -363,8 +362,8 @@ nav {
 				padding: 1em;
 				color: colors.$white-color;
 			}
-			a:hover{
-				color:colors.$bg-color
+			a:hover {
+				color: colors.$bg-color;
 			}
 		}
 	}
@@ -390,7 +389,10 @@ nav {
 			height: 200px;
 		}
 	}
-	
+	.fa-chevron-down {
+		left: 44.5%;
+		transform: translateX(-50%);
+	}
 }
 
 @media (min-width: 375px) {
@@ -429,7 +431,10 @@ nav {
 	.btn-outline-light {
 		font-size: 1.5rem;
 	}
-
+	.fa-chevron-down {
+		left: 47.5%;
+		transform: translateX(-50%);
+	}
 }
 
 @media (min-width: 992px) {
@@ -472,10 +477,14 @@ nav {
 
 .contact {
 	background-image: url('/img/town_big.jpg');
-	
-	@media (min-width: 1200px) {
-		.hero-img {
-			background-image: url('/img/Playstation_Big.jpg');
-		}
+}
+
+@media (min-width: 1200px) {
+	.hero-img {
+		background-image: url('/img/Playstation_Big.jpg');
+	}
+	.fa-chevron-down {
+		left: 47%;
+		transform: translateX(-50%);
 	}
 }
